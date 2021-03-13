@@ -11,8 +11,8 @@ p    {color: black;}
 
 <h1 style="color: black">Version 3</h1>
 <p>
-
-<a href="file:///C:/Users/megha/OneDrive/Documents/GitHub/charts/v3.html">Version 3</a></p>
+Tap instead of hover for more info.
+</p>
 <canvas id="myChart"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
@@ -36,9 +36,11 @@ var chart = new Chart(ctx, {
             data: [54, 26, 22, 16, 12, 8],
         }]
     },
-        
+
     // Configuration options go here
     options: {
+        events: ['click'],
+        
     scales: {
             yAxes: [{
                 display: true,
